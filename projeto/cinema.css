@@ -1,7 +1,7 @@
 @import url(variables.css);
 
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -393,23 +393,24 @@ button{
 
 	
 	font-family: 'Arial';
-	font-size: 24px;
 }
 .news_list_item_left{
 	margin-right: auto;
-
-	.news_list_desc{
-		font-size: 16px;
-	}
 }
 .news_list li img{
-	width:90%;
+	width:70%;
 	margin-top:15px;
-	border-radius:27px;
+	
 
 }
 .news_list ul li a{
 	text-decoration:none;
 	color:#fff;
 }
+
+.news_list_desc{
+	font-size: 16px;
+}
+
+
 

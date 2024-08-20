@@ -347,7 +347,7 @@ button{
 		letter-spacing: 1px;
 		text-transform: uppercase;
 		font-weight: bold;
-	 	}	
+	}	
 		
 	}
 
@@ -442,5 +442,30 @@ button{
 	margin: 0 4rem;
 }
 
+.prog_movie{
+	border: 1px solid grey;
+	border-radius: 30px;
+	align-items: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	width: 95%;
+
+	.prog_img{
+		display: inline-block;
+		width: 10%;
+		vertical-align: left;
+	}
+
+	.prog_movie_txt{
+		display: inline-block;
+		vertical-align: right;
+		text-decoration: none;
+		color: #DDD;
+		padding: auto;
+		
+	}
+}
 
 

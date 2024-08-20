@@ -77,9 +77,37 @@ body{
 	margin-top: none;
 }
 
+.cab__tools{
+	margin-top:0.1rem;
+	margin-right:0rem;
+	float:right;
+}
+.cab__tools ul{
+	margin-top: 0;
+	list-style:none;
+}
+.cab__tools li{
+	height:auto;
+	width:auto;
+	display:table-cell;
+	padding-right:0.5rem;
+	text-align:center;
+	vertical-align:middle;
+	border:none;
+	font-size:17px;
+	color:#fff
+}
+.cab__tools ul li a{
+	font-family:'Arial';
+	text-decoration:none;
+	font-size:13px;
+	color:#fff;
+}
+
+
 .cab__social{
 	float:right;
-	padding-top:100px
+	padding-top:60px
 }
 .cab__social img{
 	width:32px;
@@ -411,6 +439,7 @@ button{
 
 .news_list_desc{
 	font-size: 16px;
+	margin: 0 4rem;
 }
 
 

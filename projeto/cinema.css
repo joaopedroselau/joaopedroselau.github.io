@@ -445,6 +445,9 @@ button{
 	margin: 0 4rem;
 }
 
+.prog a{
+	text-decoration: none;
+}
 .prog_movie{
 	border: 1px solid grey;
 	border-radius: 30px;
@@ -455,14 +458,17 @@ button{
 	margin-right: auto;
 	padding: 20px;
 	width: 95%;
+	height:280px;
 
 	.prog_img{
-		display: block;
+		display: flex;
+		float: left;
 		width: 15%;
-		
+		border-radius: 10px;
 	}
 
 	.prog_movie_txt{
+		padding: 20px 0 0 50px;
 		display: flex;
 		align-items: right;
 		color: #DDD;

@@ -113,6 +113,9 @@ body{
 	width:32px;
 	height:32px;
 }
+.cab__social__cart{
+	margin: 0 100px 0 0;
+}
 
 .cab__menu{
 	float:center;
@@ -446,6 +449,7 @@ button{
 	border: 1px solid grey;
 	border-radius: 30px;
 	align-items: center;
+	text-decoration: none;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -453,17 +457,17 @@ button{
 	width: 95%;
 
 	.prog_img{
-		display: inline-block;
-		width: 10%;
-		vertical-align: left;
+		display: block;
+		width: 15%;
+		
 	}
 
 	.prog_movie_txt{
-		display: inline-block;
-		vertical-align: right;
-		text-decoration: none;
+		display: flex;
+		align-items: right;
 		color: #DDD;
-		padding: auto;
+		font-size: 25px;
+		font-weight: bolder;
 		
 	}
 }

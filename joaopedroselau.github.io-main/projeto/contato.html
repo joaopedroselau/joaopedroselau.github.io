@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<link rel="icon" href="assets/cinecon.png" type="image/x-icon">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="cinema.css">
+	<link rel="stylesheet" href="variables.css">
+	<link rel="stylesheet" href="responsivo.css">
+	<title>Cineastro's cinema</title>
+</head>
+
+<body>
+
+	<header class="cab">
+		<div class="cab__background"></div>
+		<a href="index.html"><img class="cab__image" src="assets/cine.png"></a>
+		<nav class="cab__menu">
+			<ul>
+				<li><a href="index.html" target="_self">CINEASTRO</a></li>
+				<li><a href="programacao.html" target="_self">PROGRAMAÇÃO</a></li>
+				<li><a href="filmes.html" target="_self">FILMES</a></li>
+				<li><a href="noticias.html" target="_self">NOTÍCIAS</a></li>
+				<li><a href="promocoes.html" target="_self">PROMOÇÕES</a></li>
+				<li><a href="contato.html" target="_self">CONTATO</a></li>
+			</ul>
+		</nav>
+		<nav class="cab__tools">
+            <ul>
+                <li><a href="/ajuda/faq.html" target="_self">Ajuda</a></li>
+                <li>|</li>
+                <li><a href="signup.html" target="_self">Cadastro</a></li>
+                <li>|</li>
+                <li><a href="login.html" target="_self">Entrar</a></li>
+			</ul>
+			<div class="cab__social">
+				<img class="cab__social__cart" src="https://pngimg.com/d/shopping_cart_PNG4.png">
+				<a href="https://www.instagram.com/cineastro.taubate/?utm_source=ig_web_button_share_sheet"><img src="https://www.edigitalagency.com.au/wp-content/uploads/new-Instagram-icon-white-png.png"></a>
+				<a href="https://x.com/Cineastro_tbt"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/x-social-media-white-icon.png"></a>
+			</div>
+        </nav>
+	</header>
+
+	<form class="contato" name="fContato" method="post" action="#">
+	
+		<br><br><label>Nome</label><br><br>
+		<input class="input" type="text" maxlength="50" size="50" name="fNome" autofocus required> <br><br>
+		
+		<label>Telefone de contato</label><br><br>
+		<input class="input" type="tel" maxlength="15" size="20" name="fFone" placeholder="(xx)xxxx-xxxx" required> <br><br>
+
+		<label>Email de contato</label><br><br>
+		<input class="input" type="email" maxlength="50" size="60" name="fEmail" required>
+		
+		<br><br>
+		
+		<div>
+			<button><input type="submit" value="Enviar"></button>
+			<button><input type="reset" value="Limpar"></button>
+		</div>
+		
+	</form>
+</body>
+
+</html>

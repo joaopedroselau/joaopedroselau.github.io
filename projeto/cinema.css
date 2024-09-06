@@ -463,18 +463,79 @@ button{
 	.prog_img{
 		display: flex;
 		float: left;
-		width: 15%;
+		height: 240px;
 		border-radius: 10px;
 	}
 
 	.prog_movie_txt{
 		padding: 20px 0 0 50px;
 		display: flex;
-		align-items: right;
 		color: #DDD;
 		font-size: 25px;
 		font-weight: bolder;
 		
+	}
+
+	.prog_movie_class_L{
+		border-radius: 4px;
+		margin: 0 0 0 8px;
+		padding: 2.5px;
+		text-align: center;
+		font-size: 20px;
+		height: 25px;
+		width: 25px;
+		background-color:green
+	}
+	.prog_movie_class_10{
+		border-radius: 4px;
+		margin: 0 0 0 8px;
+		padding: 2.5px;
+		text-align: center;
+		font-size: 20px;
+		height: 25px;
+		width: 25px;
+		background-color: #01CDFE
+
+	}
+	.prog_movie_class_12{
+		border-radius: 4px;
+		margin: 0 0 0 8px;
+		padding: 2.5px;
+		text-align: center;
+		font-size: 20px;
+		height: 25px;
+		width: 25px;
+		background-color:rgb(245, 245, 68)
+	}
+	.prog_movie_class_14{
+		border-radius: 4px;
+		margin: 0 0 0 8px;
+		padding: 2.5px;
+		text-align: center;
+		font-size: 20px;
+		height: 25px;
+		width: 25px;
+		background-color:rgb(255, 166, 0)
+	}
+	.prog_movie_class_16{
+		border-radius: 4px;
+		margin: 0 0 0 8px;
+		padding: 2.5px;
+		text-align: center;
+		font-size: 20px;
+		height: 25px;
+		width: 25px;
+		background-color:rgb(226, 37, 12)
+	}
+	.prog_movie_class_18{
+		border-radius: 4px;
+		margin: 0 0 0 8px;
+		padding: 2.5px;
+		text-align: center;
+		font-size: 20px;
+		height: 25px;
+		width: 25px;
+		background-color:rgb(20, 20, 20)
 	}
 }
 

@@ -445,8 +445,13 @@ button{
 	margin: 0 4rem;
 }
 
-.prog a{
+.prog {
+
+	
+	a{
 	text-decoration: none;
+
+}
 }
 .prog_movie{
 	border: 1px solid grey;
@@ -464,16 +469,70 @@ button{
 		display: flex;
 		float: left;
 		height: 240px;
+		width: 165px;
 		border-radius: 10px;
 	}
 
 	.prog_movie_txt{
+		display:flex;
 		padding: 20px 0 0 50px;
 		display: flex;
 		color: #DDD;
 		font-size: 25px;
 		font-weight: bolder;
 		
+	}
+	.prog_movie_desc{
+		min-height: 3rem;
+		width: 25rem;
+		font-family:Verdana, Geneva, Tahoma, sans-serif;
+		display:flex;
+		padding: 20px 0 0 50px;
+		color: #aaa;
+		font-size: 16px;
+	}
+
+	.prog_movie_audio{
+		position: absolute;
+		left:50%;
+	}
+	.prog_movie_audio_tipo{
+		display:flex;
+		color: #fff;
+		font-weight: bolder;
+		border-radius: 4px;
+		margin: 0 0 0 8px;
+		padding: 5px;
+		text-align: center;
+		font-size: 16px;
+		height: 25px;
+		width: 45px;
+		background-color: var(--color-secondary);
+	}
+	.prog_movie_salas{
+		position: absolute;
+		left:65%;
+		display:flex;
+		display: flex;
+		color: #DDD;
+		font-size: 18px;
+		p{
+			padding: 5px;
+		}
+	}
+
+	.prog_movie_salas_horario{
+		display:flex;
+		color: #DDD;
+		font-weight: bolder;
+		border-radius: 4px;
+		margin: 0 0 0 8px;
+		padding: 5px;
+		text-align: center;
+		font-size: 16px;
+		height: 25px;
+		width: 55px;
+		background-color: var(--color-contrast);
 	}
 
 	.prog_movie_class_L{
@@ -493,7 +552,7 @@ button{
 		text-align: center;
 		font-size: 20px;
 		height: 25px;
-		width: 25px;
+		width: 28px;
 		background-color: #01CDFE
 
 	}
@@ -504,8 +563,8 @@ button{
 		text-align: center;
 		font-size: 20px;
 		height: 25px;
-		width: 25px;
-		background-color:rgb(245, 245, 68)
+		width: 28px;
+		background-color:rgb(187, 187, 0)
 	}
 	.prog_movie_class_14{
 		border-radius: 4px;
@@ -514,7 +573,7 @@ button{
 		text-align: center;
 		font-size: 20px;
 		height: 25px;
-		width: 25px;
+		width: 28px;
 		background-color:rgb(255, 166, 0)
 	}
 	.prog_movie_class_16{
@@ -524,7 +583,7 @@ button{
 		text-align: center;
 		font-size: 20px;
 		height: 25px;
-		width: 25px;
+		width: 28px;
 		background-color:rgb(226, 37, 12)
 	}
 	.prog_movie_class_18{
@@ -534,7 +593,7 @@ button{
 		text-align: center;
 		font-size: 20px;
 		height: 25px;
-		width: 25px;
+		width: 28px;
 		background-color:rgb(20, 20, 20)
 	}
 }

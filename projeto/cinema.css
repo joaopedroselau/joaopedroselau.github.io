@@ -598,4 +598,147 @@ button{
 	}
 }
 
+/*Footer Alto*/
+.footer__alto{
+	display:block;
+	background-color:#a3b7ca;
+	text-align:center;
+	height:26rem;
+	margin-top:5rem;
+}
+.footer__alto__categorias{
+	display:inline;
+	list-style:none;
+	height:20rem;
+}
+.footer__alto__categorias__colunas{
+	height:20rem;
+	width:auto;
+	display:table-cell;
+	padding-top:1rem;
+	padding-left:3rem;
+	padding-right:3rem;
+	padding-bottom:3rem;
+	text-align:left;
+	border:none;
+	position:relative;
+	
+	font-family: 'Open Sans';
+	font-size: 16px;
+}
+.footer__alto__titulo{
+	font-family:"League Spartan", sans-serif;
+	font-weight:800;
+	font-size:31px;
+	margin-top:3rem;
+}
+.footer__alto__categorias__colunas ul{
+	display:table-row-group;
+	list-style:none;
+	position:relative;
+	top:1.7rem;
+	margin:auto;
+}
+.footer__alto__categorias__colunas li{
+	height:auto;
+	width:auto;
+	padding-bottom:1.2rem;
+	display:list-item;
+	text-align:left;
+	vertical-align:middle;
+	border:none;
+	font-size:14px;
+	color:#323232;
+}
+.footer__alto__categorias__colunas__lista__item a{
+	text-decoration:none;
+	color:#323232;
+}
+.footer__alto__categorias__colunas__lista__item__certificado{
+	width:6rem;
+}
+.footer__alto__categorias__colunas__lista__item__linha{
+	display:table-cell-group;
+	list-style:none;
+	margin:auto;
+}
+.footer__alto__categorias__colunas__lista__item__linha li{
+	position:relative;
+	bottom:1.7rem;
+	display:table-cell;
+	padding-right:1rem;
+}
 
+.footer__alto__categorias__colunas__lista__item__linha img{
+	width:2.5rem;
+}
+
+/*Footer Baixo*/
+.footer__baixo{
+	display:block;
+	background-color:#323232;
+	height:17rem;
+	text-align:center;
+}
+.footer__baixo__logo{
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+
+	margin: auto;
+	width: 8rem;
+	text-align:center;
+}
+.footer__baixo ul{
+	display:inline-block;
+	list-style:none;
+	position:relative;
+	top:4rem;
+	margin: auto;
+	padding: 4rem 0 0 0;
+}
+.footer__baixo li{
+	height:auto;
+	width:auto;
+	display:table-cell;
+	padding-right:0.5rem;
+	text-align:center;
+	vertical-align:middle;
+	border:none;
+	font-size:14px;
+	color:#d9d9d9;
+}
+.footer__baixo ul li a{
+	font-family:'Arial';
+	text-decoration:none;
+	color:#d9d9d9;
+}
+.footer__baixo p{
+	display:inline-block;
+	position:relative;
+	top:8rem;
+	font-family:'Arial';
+	font-size:12px;
+	color:#d9d9d9;
+}
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #000;
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--color-primary);
+	border-radius: 1px 1px 1px 1px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #dd4040;
+}

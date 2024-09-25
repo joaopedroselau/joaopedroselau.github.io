@@ -44,15 +44,18 @@
     <div class="form">
         <fieldset>
             <legend>Cadastro do cliente</legend>
-            <form method="post" action="form.php">
+            <form method="post" action="signup.php">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome">
 
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email">
 
-                <label for="cpf">CPF:</label>
-                <input type="text" id="cpf" name="cpf" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <label for="nascimento">Data de nascimento:</label>
+                <input type="text" id="nascimento" name="nascimento" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" name=telefone" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
 
                 <div class="input">
                     <input type="submit" value="Enviar" name="submit">
@@ -68,13 +71,15 @@ if (isset($_POST['submit'])) {
     include_once('conexao.php');
 
     // Sanitizar e validar entradas
-    $cpf = filter_var($_POST['cpf'], FILTER_SANITIZE_STRING);
+    $nascimento = filter_var($_POST['nascimento'], FILTER_SANITIZE_STRING);
+    $senha = filter_var($_POST['senha'], FILTER_SANITIZE_STRING);
     $nome = filter_var($_POST['nome'], FILTER_SANITIZE_STRING);
     $email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
+    $telefone = filter_var($_POST['telefone'], FILTER_SANITIZE_STRING);
 
-    if ($cpf && $nome && $email) {
-        $stmt = $conexao->prepare("INSERT INTO clientes (cpf, nome, email) VALUES (?, ?, ?)");
-        $stmt->bind_param("sss", $cpf, $nome, $email);
+    if ($nascimento && $nome && $email && $senha && $telefone) {
+        $stmt = $conexao->prepare("INSERT INTO cadastro (nascimento, senha, nome, email, telefone) VALUES (?, ?, ?)");
+        $stmt->bind_param("sss", $nascimento, $senha, $nome, $email, $telefone);
 
         if ($stmt->execute()) {
             echo "<p id='success-message'> Cadastro realizado com sucesso,</p>";

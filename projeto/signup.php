@@ -49,17 +49,17 @@
                 <input type="text" id="nome" name="nome">
 
                 <label for="nascimento">Data de nascimento:</label>
-                <input type="text" id="nascimento" name="nascimento" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input type="date" id="nascimento" name="nascimento">
 
                 <label for="telefone">Telefone:</label>
-                <input type="text" id="telefone" name=telefone" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                <input type="phone" id="telefone" name="telefone">
                 
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email">
 
                 
-                <label for="email">Senha:</label>
-                <input type="email" id="email" name="email">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha">
 
                 <div class="input">
                     <input type="submit" value="Enviar" name="submit">
@@ -83,13 +83,19 @@ if (isset($_POST['submit'])) {
 
 
     if ($nome && $nascimento && $telefone && $email && $senha) {
-        $stmt = $conexao->prepare("INSERT INTO cadastro (nome, nascimento, telefone, email, senha) VALUES (?, ?, ?)");
-        $stmt->bind_param("sss", $nome, $nascimento, $telefone, $email, $senha);
+        $stmt = $conexao->prepare("INSERT INTO cadastro (nome, nascimento, telefone, email, senha) VALUES (?, ?, ?, ?, ?)");
+        $stmt->bind_param("sssss", $nome, $nascimento, $telefone, $email, $senha);
 
-        if ($stmt->execute()) {
-            echo "<p id='success-message'> Cadastro realizado com sucesso,</p>";
-        } else {
-            echo "<p id='error-message'> Erro ao realizar cadastro. Por favor, tente novamente.</p>";
+        try{
+            if ($stmt->execute()) {
+                echo "<p id='success-message'> Cadastro realizado com sucesso,</p>";
+            } else {
+                echo "<p id='error-message'> Erro ao realizar cadastro. Por favor, tente novamente.</p>";
+            }
+        } catch(Exception $e) {
+            
+                echo "<p id='error-message'> Erro ao realizar cadastro. Por favor, tente novamente.</p>";
+            
         }
 
         $stmt->close();

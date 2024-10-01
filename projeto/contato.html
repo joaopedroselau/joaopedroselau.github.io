@@ -44,19 +44,19 @@
 	<form class="contato" name="fContato" method="post" action="#">
 	
 		<br><br><label>Nome</label><br><br>
-		<input class="input" type="text" maxlength="50" size="50" name="fNome" autofocus required> <br><br>
+		<input class="input" type="text" maxlength="50" size="50" name="nome"  placeholder="Digite seu nome" autofocus required> <br><br>
 		
 		<label>Telefone de contato</label><br><br>
-		<input class="input" type="tel" maxlength="15" size="20" name="fFone" placeholder="(xx)xxxx-xxxx" required> <br><br>
+		<input class="input" type="phone" maxlength="15" size="20" name="fone" placeholder="(xx)xxxx-xxxx" required> <br><br>
 
 		<label>Email de contato</label><br><br>
-		<input class="input" type="email" maxlength="50" size="60" name="fEmail" required>
+		<input class="input" type="email" maxlength="50" size="60" name="email"  placeholder="xxxxxxx@xxxx.xxx" required>
 		
 		<br><br>
 		
 		<div>
-			<button><input type="submit" value="Enviar"></button>
-			<button><input type="reset" value="Limpar"></button>
+			<input class="button" type="submit" value="Enviar">
+			<input class="button" type="reset" value="Limpar">
 		</div>
 	</form>
 	<footer>

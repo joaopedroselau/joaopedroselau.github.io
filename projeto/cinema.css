@@ -353,9 +353,6 @@ button:active {
 	}
 
 	div{
-	input{background-color: var(--color-primary);
-		color: black;
-		border: solid 1px var(--color-primary);
 		border-radius: 16px;
 		padding: 4px 24px;
 		letter-spacing: 1px;
@@ -372,7 +369,7 @@ button:active {
 		border-bottom: 2px solid #ccc;
 		color: white;
 	}
-}
+
 
 .news_main{
 	border: 1px solid grey;
@@ -751,5 +748,48 @@ button:active {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: #dd4040;
+	background: #a02828;
+}
+.form{
+
+	align-content: space-around;
+	background-color: green;
+
+	.input{
+		background-color: #01CDFE;
+		align-content: center;
+	}
+
+	legend{
+		color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bold;
+	}
+	.label_form{
+		color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bold;
+	}
+	
+	.button{
+		background-color: var(--color-primary);
+		border: none;
+		border-radius: 16px;
+		padding: 4px 24px;
+		letter-spacing: 1px;
+		padding: 10px 15px;
+		font-size: 14px;
+		text-align: center;
+		cursor: pointer;
+		outline: none;
+		color: #fff;
+	}
+	
+	.button:hover {background-color: #5e1229}
+	
+	
+	.button:active {
+		background-color: #5e1229;
+		transform: translateY(4px);
+	}
 }

@@ -41,33 +41,32 @@
         </nav>
 	</header>
 
-    <div class="form">
-        <fieldset>
-            <legend>Cadastro do cliente</legend>
+        <fieldset class="form">
+            <legend>Cadastro do cliente</legend><br><br>
             <form method="post" action="signup.php">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome">
+                <label class="label_form" for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome"><br><br>
 
-                <label for="nascimento">Data de nascimento:</label>
-                <input type="date" id="nascimento" name="nascimento">
+                <label class="label_form" for="nascimento">Data de nascimento:</label>
+                <input type="date" id="nascimento" name="nascimento"><br><br>
 
-                <label for="telefone">Telefone:</label>
-                <input type="phone" id="telefone" name="telefone">
+                <label class="label_form" for="telefone">Telefone:</label>
+                <input type="phone" id="telefone" name="telefone"><br><br>
                 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
+                <label class="label_form" for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
 
                 
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha">
+                <label class="label_form" for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha"><br><br>
 
                 <div class="input">
-                    <input type="submit" value="Enviar" name="submit">
-                    <input type="reset" value="Limpar tudo" name="limpar">
+                    <input class="button" type="submit" value="Enviar" name="submit">
+                    <input class="button" type="reset" value="Limpar tudo" name="limpar">
                 </div>
             </form>
         </fieldset>
-    </div>
+
 
 
     <?php

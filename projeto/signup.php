@@ -48,14 +48,18 @@
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome">
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-
                 <label for="nascimento">Data de nascimento:</label>
                 <input type="text" id="nascimento" name="nascimento" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
 
                 <label for="telefone">Telefone:</label>
                 <input type="text" id="telefone" name=telefone" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                
+                <label for="email">Senha:</label>
+                <input type="email" id="email" name="email">
 
                 <div class="input">
                     <input type="submit" value="Enviar" name="submit">
@@ -71,15 +75,16 @@ if (isset($_POST['submit'])) {
     include_once('conexao.php');
 
     // Sanitizar e validar entradas
-    $nascimento = filter_var($_POST['nascimento'], FILTER_SANITIZE_STRING);
-    $senha = filter_var($_POST['senha'], FILTER_SANITIZE_STRING);
     $nome = filter_var($_POST['nome'], FILTER_SANITIZE_STRING);
-    $email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
+    $nascimento = filter_var($_POST['nascimento'], FILTER_SANITIZE_STRING);
     $telefone = filter_var($_POST['telefone'], FILTER_SANITIZE_STRING);
+    $email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
+    $senha = filter_var($_POST['senha'], FILTER_SANITIZE_STRING);
 
-    if ($nascimento && $nome && $email && $senha && $telefone) {
-        $stmt = $conexao->prepare("INSERT INTO cadastro (nascimento, senha, nome, email, telefone) VALUES (?, ?, ?)");
-        $stmt->bind_param("sss", $nascimento, $senha, $nome, $email, $telefone);
+
+    if ($nome && $nascimento && $telefone && $email && $senha) {
+        $stmt = $conexao->prepare("INSERT INTO cadastro (nome, nascimento, telefone, email, senha) VALUES (?, ?, ?)");
+        $stmt->bind_param("sss", $nome, $nascimento, $telefone, $email, $senha);
 
         if ($stmt->execute()) {
             echo "<p id='success-message'> Cadastro realizado com sucesso,</p>";

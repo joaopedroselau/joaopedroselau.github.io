@@ -793,3 +793,17 @@ button:active {
 		transform: translateY(4px);
 	}
 }
+
+.snack_list_item_left{
+	color: #FFF;
+	width: 6rem;
+	height: 20%;
+	align-content: center;
+	display: table-cell;
+	text-align: center;
+	margin-right: 80px;
+
+	.snack_list_img{
+		width: 240px;
+	}
+}

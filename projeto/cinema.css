@@ -795,13 +795,15 @@ button:active {
 }
 
 .snack_list_item_left{
+	border-color: #aaa;
+	border: 200px;
 	color: #FFF;
 	width: 6rem;
 	height: 20%;
-	align-self: center;
+	align-content: center;
 	display: table-cell;
 	text-align: center;
-	margin-right: 80px;
+	margin-right: 200px;
 
 	.snack_list_img{
 		width: 240px;

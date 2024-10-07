@@ -142,7 +142,16 @@ body{
 				font-size:20 px;
 				color:#FFF;
 			}
+			li:hover{
+				transform: scale(2);
+			}
+
+			
 		}
+		li:hover{
+			transform: scale(2);
+		}
+
 	}
 }
 
@@ -227,20 +236,24 @@ button{
 	border-radius: 16px;
 	padding: 4px 24px;
 	letter-spacing: 1px;
-	padding: 10px 15px;
 	font-size: 18px;
 	text-align: center;
 	cursor: pointer;
 	outline: none;
 	color: #fff;
+	transition: all 300ms ease-out;
 }
 
-button:hover {background-color: #5e1229}
+button:hover {
+	background-color: #5e1229;
+	font-size: 24px;
+	
+}
 
 
 button:active {
 	background-color: #5e1229;
-	transform: translateY(4px);
+	
 }
 .news {
 
@@ -606,6 +619,80 @@ button:active {
 	}
 }
 
+.form{
+
+	align-content: space-around;
+	background-color: green;
+
+	.input{
+		background-color: #01CDFE;
+		align-content: center;
+	}
+
+	legend{
+		color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bold;
+	}
+	.label_form{
+		color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bold;
+	}
+	
+	.button{
+		background-color: var(--color-primary);
+		border: none;
+		border-radius: 16px;
+		padding: 4px 24px;
+		letter-spacing: 1px;
+		font-size: 14px;
+		text-align: center;
+		cursor: pointer;
+		outline: none;
+		color: #fff;
+	}
+	
+	.button:hover {
+		background-color: #5e1229;
+		width: 6px;
+		height: 50rem;
+	}
+	
+	
+	.button:active {
+		background-color: #5e1229;
+		transform: translateY(4px);
+	}
+}
+
+.snack_list{
+	width: fit-content;
+	margin: auto;
+}
+
+.snack_list_list{
+	width: fit-content;
+	padding:0;
+}
+
+.snack_list_item_left{
+	border:1px solid #aaa;
+	border-radius: 2rem;
+	color: #FFF;
+	width: auto;
+	height: 20%;
+	align-content: center;
+	display: inline-block;
+	text-align: center;
+	padding: 0 2rem 2rem 2rem;
+	margin: 3.5rem;
+
+	.snack_list_img{
+		width: 240px;
+	}
+}
+
 /*Footer Alto*/
 .footer__alto{
 	display:block;
@@ -749,73 +836,4 @@ button:active {
 
 ::-webkit-scrollbar-thumb:hover {
 	background: #a02828;
-}
-.form{
-
-	align-content: space-around;
-	background-color: green;
-
-	.input{
-		background-color: #01CDFE;
-		align-content: center;
-	}
-
-	legend{
-		color: white;
-		font-family: Arial, Helvetica, sans-serif;
-		font-weight: bold;
-	}
-	.label_form{
-		color: white;
-		font-family: Arial, Helvetica, sans-serif;
-		font-weight: bold;
-	}
-	
-	.button{
-		background-color: var(--color-primary);
-		border: none;
-		border-radius: 16px;
-		padding: 4px 24px;
-		letter-spacing: 1px;
-		padding: 10px 15px;
-		font-size: 14px;
-		text-align: center;
-		cursor: pointer;
-		outline: none;
-		color: #fff;
-	}
-	
-	.button:hover {background-color: #5e1229}
-	
-	
-	.button:active {
-		background-color: #5e1229;
-		transform: translateY(4px);
-	}
-}
-
-.snack_list{
-	width: fit-content;
-	margin: auto;
-}
-
-.snack_list_list{
-	width: fit-content;
-}
-
-.snack_list_item_left{
-	border:1px solid #aaa;
-	border-radius: 2rem;
-	color: #FFF;
-	width: auto;
-	height: 20%;
-	align-content: center;
-	display: inline-block;
-	text-align: center;
-	padding: 0 2rem 2rem 2rem;
-	margin: 3.5rem;
-
-	.snack_list_img{
-		width: 240px;
-	}
 }

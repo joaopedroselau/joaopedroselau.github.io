@@ -794,16 +794,26 @@ button:active {
 	}
 }
 
+.snack_list{
+	width: fit-content;
+	margin: auto;
+}
+
+.snack_list_list{
+	width: fit-content;
+}
+
 .snack_list_item_left{
-	border-color: #aaa;
-	border: 200px;
+	border:1px solid #aaa;
+	border-radius: 2rem;
 	color: #FFF;
-	width: 6rem;
+	width: auto;
 	height: 20%;
 	align-content: center;
-	display: table-cell;
+	display: inline-block;
 	text-align: center;
-	margin-right: 200px;
+	padding: 0 2rem 2rem 2rem;
+	margin: 3.5rem;
 
 	.snack_list_img{
 		width: 240px;

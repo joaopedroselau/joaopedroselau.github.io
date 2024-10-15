@@ -42,12 +42,12 @@
 	</header>
 
         <fieldset class="form">
-            <legend>Cadastro do cliente</legend><br><br>
+            <legend>CADASTRO DO CLIENTE</legend><br><br>
             <form method="post" action="signup.php">
                 <label class="label_form" for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome"><br><br>
 
-                <label class="label_form" for="nascimento">Data de nascimento:</label>
+                <label class="label_form" for="nascimento">Nascimento:</label>
                 <input type="date" id="nascimento" name="nascimento"><br><br>
 
                 <label class="label_form" for="telefone">Telefone:</label>
@@ -61,8 +61,8 @@
                 <input type="password" id="senha" name="senha"><br><br>
 
                 <div class="input">
-                    <input class="button" type="submit" value="Enviar" name="submit">
-                    <input class="button" type="reset" value="Limpar tudo" name="limpar">
+                    <input class="button" type="submit" value="ENVIAR" name="submit">
+                    <input class="button" type="reset" value="LIMPAR TUDO" name="limpar">
                 </div>
             </form>
         </fieldset>
@@ -87,9 +87,9 @@ if (isset($_POST['submit'])) {
 
         try{
             if ($stmt->execute()) {
-                echo "<p id='success-message'> Cadastro realizado com sucesso,</p>";
+                echo "<p id='success-message'> Cadastro realizado com sucesso!</p>";
             } else {
-                echo "<p id='error-message'> Erro ao realizar cadastro. Por favor, tente novamente.</p>";
+                echo "<p id='error-message'> Email já cadastrado. Por favor, tente novamente.</p>";
             }
         } catch(Exception $e) {
             
@@ -106,6 +106,7 @@ if (isset($_POST['submit'])) {
 }
 ?>
 </body>
+
 </html>
 
 

@@ -368,8 +368,31 @@ button:active {
 		text-transform: uppercase;
 		font-weight: bold;
 	}	
+	.button{
+		background-color: var(--color-primary);
+		border: none;
+		border-radius: 16px;
+		padding: 4px 24px;
+		font-size: 14px;
+		text-align: center;
+		cursor: pointer;
+		color: #fff;
+		transition: all 150ms ease-out;
+	}
+	
+	.button:hover {
+		background-color: #5e1229;
 		
 	}
+	
+	
+	.button:active {
+		background-color: #5e1229;
+		
+	}
+		
+	}
+	
 
 	.input{
 		background-color: black;
@@ -616,22 +639,24 @@ button:active {
 }
 
 .form{
-	display: flex;
+	display: block;
 	margin:auto;
 	width: 30rem;
-	height: 30rem;
-	justify-content: center;
+	height: 26rem;
+	text-align: center;
 	padding: 72px 0 0 0;
 	border: 1px solid #FFF;
 	border-radius: 5px;
 
 	.input{
-		background-color: #01CDFE;
-		display: block;
+		display: table-cell;
+		border: none;
 	}
 
+	
+
 	legend{
-		margin:auto auto 20px auto;
+		margin:auto auto auto auto;
 		color: var(--color-primary);
 		font-family: Arial, Helvetica, sans-serif;
 		font-weight: bolder;
@@ -643,46 +668,76 @@ button:active {
 		color: white;
 		font-family: Arial, Helvetica, sans-serif;
 		font-weight: bold;
+		text-align: left;
+		
 	}
+
 	
-	.button{
+	.button2{
 		background-color: var(--color-primary);
 		border: none;
-		display: i;
 		border-radius: 16px;
 		padding: 4px 24px;
 		font-size: 14px;
 		text-align: center;
 		cursor: pointer;
-		outline: none;
 		color: #fff;
 		transition: all 150ms ease-out;
 	}
 	
-	.button:hover {
+	.button2:hover {
 		background-color: #5e1229;
-		font-size: 20px;
+		font-size: 18px;
 	}
 	
 	
-	.button:active {
+	.button2:active {
 		background-color: #5e1229;
-		transform: translateY(4px);
+		
 	}
+}
+
+#box{
+	background-color: rgb(95, 95, 95);
+	border: none;
+	cursor: pointer;
+	height: 20px;
+	border-radius: 4px;
+	box-shadow: 0 0 .4vw rgba(0,0,0,0.5), 0 0 0 .15vw transparent;
+	outline: none;
+	transition: .2s;
+}
+
+#box:hover {
+	box-shadow: 0 0 0 .15vw rgba(180, 127, 127, 0.877);
+}
+
+#box:focus {
+	box-shadow: 0 0 0 .15vw rgb(134, 2, 24);
 }
 
 #error-message {
 
-	color: white;
-	font-size: 24px;
+	font-size: 18px;
 	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	background-color: #c27b7b;
+	border: red 2px solid;
+	color: rgb(248, 0, 0);
+	width:10rem;
+	height: 2rem;
+	align-items: center;
+	margin-top: 10px;
 }
 
 #success-message {
 
-	color: white;
-	font-size: 24px;
+	color: green;
+	background-color: rgb(176, 255, 176);
+	border: green 2px solid;
+	font-size: 14px;
 	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bolder;
 }
 
 .snack_list{
@@ -692,6 +747,7 @@ button:active {
 
 .snack_list_list{
 	width: fit-content;
+	display: inline-flex;
 
 }
 
@@ -702,14 +758,40 @@ button:active {
 	width: auto;
 	height: 20%;
 	align-content: center;
-	display: inline-block;
+	display: block;
 	text-align: center;
-	padding: 0 2rem 2rem 2rem;
-	margin: 3.5rem;
+	padding: 0 2.5rem 2rem 2.5rem;
+	margin: 3rem;
 
 	.snack_list_img{
 		width: 240px;
 	}
+
+	button{
+		background-color: var(--color-primary);
+		display: inline-flexbox;
+		border: none;
+		border-radius: 16px;
+		padding: 4px 24px;
+		font-size: 18px;
+		text-align: center;
+		cursor: pointer;
+		outline: none;
+		color: #fff;
+		transition: all 150ms ease-out;
+	}
+	
+	button:hover {
+		background-color: #5e1229;
+		font-size: 18px;
+		
+	}
+	
+	
+	button:active {
+		background-color: #5e1229;
+		
+}
 }
 
 /*Footer Alto*/

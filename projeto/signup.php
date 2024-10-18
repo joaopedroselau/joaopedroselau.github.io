@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="cinema.css">
 	<link rel="stylesheet" href="variables.css">
 	<link rel="stylesheet" href="responsivo.css">
+    <script src="messagem_temp.js"></script>
 	<title>Cineastro's cinema</title>
 </head>
 
@@ -45,24 +46,24 @@
             <legend>CADASTRO DO CLIENTE</legend><br><br>
             <form method="post" action="signup.php">
                 <label class="label_form" for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome"><br><br>
+                <input type="text" id="box" name="nome"><br><br>
 
                 <label class="label_form" for="nascimento">Nascimento:</label>
-                <input type="date" id="nascimento" name="nascimento"><br><br>
+                <input type="date" id="box" name="nascimento"><br><br>
 
                 <label class="label_form" for="telefone">Telefone:</label>
-                <input type="phone" id="telefone" name="telefone"><br><br>
+                <input type="phone" id="box" name="telefone"><br><br>
                 
                 <label class="label_form" for="email">Email:</label>
-                <input type="email" id="email" name="email"><br><br>
+                <input type="email" id="box" name="email"><br><br>
 
                 
                 <label class="label_form" for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha"><br><br>
+                <input type="password" id="box" name="senha"><br><br>
 
                 <div class="input">
-                    <input class="button" type="submit" value="ENVIAR" name="submit">
-                    <input class="button" type="reset" value="LIMPAR TUDO" name="limpar">
+                    <input class="button2" type="submit" value="ENVIAR" name="submit">
+                    <input class="button2" type="reset" value="LIMPAR TUDO" name="limpar">
                 </div>
             </form>
         </fieldset>
@@ -89,11 +90,11 @@ if (isset($_POST['submit'])) {
             if ($stmt->execute()) {
                 echo "<p id='success-message'> Cadastro realizado com sucesso!</p>";
             } else {
-                echo "<p id='error-message'> Email já cadastrado. Por favor, tente novamente.</p>";
+                echo "<p id='error-message'> Erro ao realizar cadastro. Por favor, tente novamente.</p>";
             }
         } catch(Exception $e) {
             
-                echo "<p id='error-message'> Erro ao realizar cadastro. Por favor, tente novamente.</p>";
+                echo "<p id='error-message'> Email já cadastrado. Por favor, tente novamente.</p>";
             
         }
 

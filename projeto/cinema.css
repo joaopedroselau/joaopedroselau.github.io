@@ -724,10 +724,11 @@ button:active {
 	background-color: #c27b7b;
 	border: red 2px solid;
 	color: rgb(248, 0, 0);
-	width:10rem;
-	height: 2rem;
-	align-items: center;
-	margin-top: 10px;
+	width:16rem;
+	height: 2.5rem;
+	text-align: center;
+	justify-self: start;
+	
 }
 
 #success-message {
@@ -735,9 +736,14 @@ button:active {
 	color: green;
 	background-color: rgb(176, 255, 176);
 	border: green 2px solid;
-	font-size: 14px;
+	font-size: 18px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bolder;
+	width:16rem;
+	height: 2.5rem;
+	text-align: center;
+	justify-self: start;
+	
 }
 
 .snack_list{

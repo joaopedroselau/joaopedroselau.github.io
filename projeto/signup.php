@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="variables.css">
 	<link rel="stylesheet" href="responsivo.css">
     <script src="messagem_temp.js"></script>
+    <script src="eye.js"></script>
 	<title>Cineastro's cinema</title>
 </head>
 

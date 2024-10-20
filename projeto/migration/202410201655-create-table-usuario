@@ -1,0 +1,8 @@
+-- Tabela de Usuários
+CREATE TABLE IF NOT EXISTS tbl_usuario (
+    usu_id SMALLINT NOT NULL AUTO_INCREMENT,
+    usu_nome VARCHAR(80) NOT NULL,
+    usu_usuario VARCHAR(30) NOT NULL,
+    usu_senha VARCHAR(15) NOT NULL,
+    PRIMARY KEY (usu_id)
+);

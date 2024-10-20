@@ -1,0 +1,10 @@
+-- Tabela de Produtos
+CREATE TABLE IF NOT EXISTS tbl_produto (
+    pro_codigo SMALLINT NOT NULL AUTO_INCREMENT,
+    pro_nome VARCHAR(80) NOT NULL,
+    pro_descricao TEXT,
+    pro_preco FLOAT NOT NULL,
+    cat_codigo SMALLINT NOT NULL,
+    PRIMARY KEY (pro_codigo),
+    FOREIGN KEY (cat_codigo) REFERENCES tbl_categoria(cat_codigo)
+);

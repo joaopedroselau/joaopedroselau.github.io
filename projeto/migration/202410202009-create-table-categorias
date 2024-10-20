@@ -1,0 +1,6 @@
+-- Tabela de Categorias
+CREATE TABLE IF NOT EXISTS tbl_categoria (
+    cat_codigo SMALLINT NOT NULL AUTO_INCREMENT,
+    cat_nome VARCHAR(60) NOT NULL,
+    PRIMARY KEY (cat_codigo)
+);

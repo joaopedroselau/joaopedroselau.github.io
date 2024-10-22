@@ -800,6 +800,38 @@ button:active {
 }
 }
 
+.informacoes{
+
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+
+	.img_filmes{
+
+		padding: 4rem 20rem 0 2rem;
+	}
+	.salas_filme{
+		color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bolder;
+		background-color: var(--color-primary);
+		
+	}
+	
+	.info_filmes{
+
+		.info_salas_filmes{
+			
+			display: flex;
+			height: 3rem;
+			width: 40rem;
+		
+		}
+	}
+	
+}
+
+
 /*Footer Alto*/
 .footer__alto{
 	display:block;

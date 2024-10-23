@@ -21,7 +21,7 @@ function hideMessages() {
             setTimeout(() => {
                 errorMessage.style.display = 'none'; // Remove o elemento do DOM
             }, 1000); // Tempo igual ao da transição (1 segundo)
-        }, 1000); // 3000 ms = 3 segundos
+        }, 2500); // 3000 ms = 3 segundos
     }
 }
 

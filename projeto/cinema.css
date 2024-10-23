@@ -640,11 +640,10 @@ button:active {
 
 .form{
 	display: block;
-	margin:auto;
+	margin: 3rem auto 0 auto;
 	width: 30rem;
-	height: 26rem;
-	text-align: center;
-	padding: 72px 0 0 0;
+	height: auto;
+	padding: 32px 0 0 3rem;
 	border: 1px solid #FFF;
 	border-radius: 5px;
 
@@ -653,26 +652,28 @@ button:active {
 		border: none;
 	}
 
-	
-
-	legend{
+	.legend{
+		display:flex;
 		margin:auto auto auto auto;
 		color: var(--color-primary);
 		font-family: Arial, Helvetica, sans-serif;
 		font-weight: bolder;
 		font-size: 30px;
+		margin: 0 0 24px 3rem;
 		position: relative;
-		top:30px;
+		top:24px;
+		right:3rem;
 	}
 	.label_form{
-		color: white;
+		display: inline-block;
+		width: 9rem;
+		text-align: right;
+		color: #FFFFFF;
 		font-family: Arial, Helvetica, sans-serif;
 		font-weight: bold;
-		text-align: left;
+		text-align: right;
 		
 	}
-
-	
 	.button2{
 		background-color: var(--color-primary);
 		border: none;
@@ -683,6 +684,7 @@ button:active {
 		cursor: pointer;
 		color: #fff;
 		transition: all 150ms ease-out;
+		margin: 0 0 3rem 0;
 	}
 	
 	.button2:hover {
@@ -697,10 +699,68 @@ button:active {
 	}
 }
 
+.form__login{
+	display: block;
+	margin: 3rem auto 0 auto;
+	width: 12rem;
+	height: auto;
+	padding: 34px 7rem 0 7rem;
+	border: 1px solid #FFF;
+	border-radius: 5px;
+
+	.input__login{
+		display: table-cell;
+		border: none;
+	}
+	.legend{
+		margin:auto auto auto auto;
+		color: var(--color-primary);
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bolder;
+		font-size: 30px;
+		position: relative;
+		text-align:center;
+		margin: 0 0 4rem 0;
+	}
+	.label__form__login{
+		color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		text-align: left;
+		
+	}
+	.button2__login{
+		background-color: var(--color-primary);
+		margin: 2rem 0 6rem 0;
+		border: none;
+		border-radius: 16px;
+		padding: 4px 24px;
+		font-size: 14px;
+		text-align: center;
+		cursor: pointer;
+		color: #fff;
+		transition: all 150ms ease-out;
+	}
+	
+	.button2__login:hover {
+		background-color: #5e1229;
+		font-size: 18px;
+	}
+	
+	
+	.button2__login:active {
+		background-color: #5e1229;
+		
+	}
+}
+
 #box{
+
 	background-color: rgb(95, 95, 95);
+	color: #fff;
 	border: none;
 	cursor: pointer;
+	width: 13rem;
 	height: 20px;
 	border-radius: 4px;
 	box-shadow: 0 0 .4vw rgba(0,0,0,0.5), 0 0 0 .15vw transparent;
@@ -717,17 +777,21 @@ button:active {
 }
 
 #error-message {
-
 	font-size: 18px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bolder;
 	background-color: #c27b7b;
 	border: red 2px solid;
+	border-radius: 3px;
 	color: rgb(248, 0, 0);
 	width:16rem;
 	height: 2.5rem;
 	text-align: center;
-	justify-self: start;
+	justify-self: middle;
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	
 }
 
@@ -736,6 +800,7 @@ button:active {
 	color: green;
 	background-color: rgb(176, 255, 176);
 	border: green 2px solid;
+	border-radius: 3px;
 	font-size: 18px;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bolder;
@@ -743,7 +808,10 @@ button:active {
 	height: 2.5rem;
 	text-align: center;
 	justify-self: start;
-	
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .snack_list{
@@ -800,44 +868,17 @@ button:active {
 }
 }
 
-.informacoes{
-
-		width: 100%;
-		display: flex;
-		justify-content: space-around;
-
-	.img_filmes{
-
-		padding: 4rem 20rem 0 2rem;
-	}
-	.salas_filme{
-		color: white;
-		font-family: Arial, Helvetica, sans-serif;
-		font-weight: bolder;
-		background-color: var(--color-primary);
-		
-	}
-	
-	.info_filmes{
-
-		.info_salas_filmes{
-			
-			display: flex;
-			height: 3rem;
-			width: 40rem;
-		
-		}
-	}
-	
+/*Footer Alto*/
+footer{
+	width:100%;
 }
 
-
-/*Footer Alto*/
 .footer__alto{
 	display:block;
 	background-color:#a3b7ca;
 	text-align:center;
 	height:26rem;
+	width:100%;
 	margin-top:5rem;
 }
 .footer__alto__categorias{
@@ -847,7 +888,7 @@ button:active {
 }
 .footer__alto__categorias__colunas{
 	height:20rem;
-	width:auto;
+	width:24rem;
 	display:table-cell;
 	padding-top:1rem;
 	padding-left:3rem;

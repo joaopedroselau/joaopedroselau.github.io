@@ -44,23 +44,26 @@
 	</header>
 
         <fieldset class="form">
-            <legend>CADASTRO DO CLIENTE</legend><br><br>
+            <div class="legend">CADASTRO DO CLIENTE</div><br><br>
             <form method="post" action="signup.php">
                 <label class="label_form" for="nome">Nome:</label>
-                <input type="text" id="box" name="nome"><br><br>
+                <input class="box" type="text" id="box" name="nome"><br><br>
 
                 <label class="label_form" for="nascimento">Nascimento:</label>
-                <input type="date" id="box" name="nascimento"><br><br>
+                <input class="box" type="date" id="box" name="nascimento"><br><br>
 
                 <label class="label_form" for="telefone">Telefone:</label>
-                <input type="phone" id="box" name="telefone"><br><br>
+                <input class="box" type="phone" id="box" name="telefone"><br><br>
                 
                 <label class="label_form" for="email">Email:</label>
-                <input type="email" id="box" name="email"><br><br>
+                <input class="box" type="email" id="box" name="email"><br><br><br>
 
                 
                 <label class="label_form" for="senha">Senha:</label>
-                <input type="password" id="box" name="senha"><br><br>
+                <input class="box" type="password" id="box" name="senha"><br><br>
+				
+				<label class="label_form" for="senha2">Confirmar senha:</label>
+                <input class="box" type="password" id="box" name="senha2"><br><br><br><br>
 
                 <div class="input">
                     <input class="button2" type="submit" value="ENVIAR" name="submit">
@@ -68,8 +71,6 @@
                 </div>
             </form>
         </fieldset>
-
-
 
     <?php
 if (isset($_POST['submit'])) {
@@ -81,9 +82,12 @@ if (isset($_POST['submit'])) {
     $telefone = filter_var($_POST['telefone'], FILTER_SANITIZE_STRING);
     $email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
     $senha = filter_var($_POST['senha'], FILTER_SANITIZE_STRING);
+	$senha2 = filter_var($_POST['senha2'], FILTER_SANITIZE_STRING);
 
-
-    if ($nome && $nascimento && $telefone && $email && $senha) {
+	if($senha != $senha2){
+		echo "<p id='error-message'> As duas senhas precisam ser iguais</p>";
+	}
+    else if ($nome && $nascimento && $telefone && $email && $senha) {
         $stmt = $conexao->prepare("INSERT INTO cadastro (nome, nascimento, telefone, email, senha) VALUES (?, ?, ?, ?, ?)");
         $stmt->bind_param("sssss", $nome, $nascimento, $telefone, $email, $senha);
 

@@ -868,6 +868,39 @@ button:active {
 }
 }
 
+.informacoes{
+
+	display: flex;
+	justify-content: space-around;
+
+	.salas_filme{
+
+		background-color: grey;
+	}
+	p{
+		color: white;
+	}
+
+	.img_filme{
+
+		width: 280px;
+		border: 1px solid grey;
+		border-radius: 15px;
+		padding: 10px;
+	}
+
+
+	.info_salas_filmes{
+		display: flex;
+		color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bolder;
+		width: 45rem;
+		font-size: 20px;
+		background-color: var(--color-primary);
+	}
+}
+
 /*Footer Alto*/
 footer{
 	width:100%;
@@ -892,7 +925,7 @@ footer{
 	display:table-cell;
 	padding-top:1rem;
 	padding-left:3rem;
-	padding-right:3rem;
+	padding-right:1rem;
 	padding-bottom:3rem;
 	text-align:left;
 	border:none;
@@ -929,9 +962,7 @@ footer{
 	text-decoration:none;
 	color:#323232;
 }
-.footer__alto__categorias__colunas__lista__item__certificado{
-	width:6rem;
-}
+
 .footer__alto__categorias__colunas__lista__item__linha{
 	display:table-cell-group;
 	list-style:none;
@@ -945,7 +976,7 @@ footer{
 }
 
 .footer__alto__categorias__colunas__lista__item__linha img{
-	width:2.5rem;
+	width:2rem;
 }
 
 /*Footer Baixo*/

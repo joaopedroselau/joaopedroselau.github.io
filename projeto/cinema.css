@@ -901,6 +901,16 @@ button:active {
 	}
 }
 
+#cart-items{
+	color: white;
+	background-color: #01CDFE;
+}
+
+#total-price{
+	color: white;
+	
+}
+
 /*Footer Alto*/
 footer{
 	width:100%;

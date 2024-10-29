@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="cinema.css">
 	<link rel="stylesheet" href="variables.css">
 	<link rel="stylesheet" href="responsivo.css">
+	<script src="cart.js"></script>
 	<title>Cineastro's cinema</title>
 </head>
 
@@ -48,7 +49,8 @@
 				
 					<h3>Pipoca Salgada Pequena</h3>
 					<img class="snack_list_img "src="assets/food/pipoca-p.png">	
-					<p class="snack_list_desc">R$24,99</p><br><button>Adicionar ao carrinho</button>
+					<p class="snack_list_desc">R$24,99</p><br>
+					<button onclick="addToCarrinho('Pipoca Salgada Pequena', 10)"> Adicionar ao carrinho </button>
 
 				
 		
@@ -58,7 +60,8 @@
 				
 				<h3>Pipoca Salgada Média</h3>
 				<img class="snack_list_img "src="assets/food/pipoca-m.png">	
-				<p class="snack_list_desc">R$35,99</p><br><button>Adicionar ao carrinho</button>
+				<p class="snack_list_desc">R$35,99</p><br>
+				<button onclick="addToCarrinho('Pipoca Salgada Média', 20)">Adicionar ao carrinho</button>
 			
 	
 			
@@ -67,7 +70,8 @@
 				
 				<h3>Pipoca Salgada Grande</h3>
 				<img class="snack_list_img "src="assets/food/pipoca-g-salgada.png">	
-				<p class="snack_list_desc">R$44,99</p><br><button>Adicionar ao carrinho</button>
+				<p class="snack_list_desc">R$44,99</p><br>
+				<button onclick="addToCarrinho('Pipoca Salgada Grande', 30)">Adicionar ao carrinho</button>
 			
 	
 			
@@ -78,7 +82,8 @@
 				
 					<h3>Pipoca Doce Pequena</h3>
 					<img class="snack_list_img "src="assets/food/pipoca-p-doce.png">	
-					<p class="snack_list_desc">R$24,99</p><br><button>Adicionar ao carrinho</button>
+					<p class="snack_list_desc">R$24,99</p><br>
+					<button onclick="addToCarrinho('Pipoca Doce Pequena', 40)">Adicionar ao carrinho</button>
 				
 		
 				
@@ -87,7 +92,8 @@
 				
 				<h3>Pipoca Doce Média</h3>
 				<img class="snack_list_img "src="assets/food/pipoca-m-doce.png">	
-				<p class="snack_list_desc">R$35,99</p><br><button>Adicionar ao carrinho</button>
+				<p class="snack_list_desc">R$35,99</p><br>
+				<button onclick="addToCarrinho('Produto 5', 50)">Adicionar ao carrinho</button>
 			
 	
 			
@@ -96,7 +102,8 @@
 				
 				<h3>Pipoca Doce Grande</h3>
 				<img class="snack_list_img "src="assets/food/pipoca-g.png">	
-				<p class="snack_list_desc">R$44,99</p><br><button>Adicionar ao carrinho</button>
+				<p class="snack_list_desc">R$44,99</p><br>
+				<button onclick="addToCarrinho('Pipoca Doce Média', 60)">Adicionar ao carrinho</button>
 			
 	
 			
@@ -107,7 +114,8 @@
 				
 					<h3>Refrigerante Pequeno</h3>
 					<img class="snack_list_img "src="assets/food/coca-p.png">
-					<p class="snack_list_desc">R$9,99</p><br><button>Adicionar ao carrinho</button>
+					<p class="snack_list_desc">R$9,99</p><br>
+					<button onclick="addToCarrinho('Refrigerante Pequeno', 70)">Adicionar ao carrinho</button>
 				
 		
 				
@@ -116,7 +124,8 @@
 				
 				<h3>Refrigerante Médio</h3>
 				<img class="snack_list_img "src="assets/food/coca-m.png">	
-				<p class="snack_list_desc">R$15,99</p><br><button>Adicionar ao carrinho</button>
+				<p class="snack_list_desc">R$15,99</p><br>
+				<button onclick="addToCarrinho('Refrigerante Médio', 80)">Adicionar ao carrinho</button>
 			
 	
 			
@@ -125,7 +134,8 @@
 				
 				<h3>Refrigerante Grande</h3><br>
 				<img class="snack_list_img "src="assets/food/coca-g.png"><br><br>
-				<p class="snack_list_desc">R$24,99</p><br><button>Adicionar ao carrinho</button>
+				<p class="snack_list_desc">R$24,99</p><br>
+				<button onclick="addToCarrinho('Refrigerante Grande', 90)">Adicionar ao carrinho</button>
 			
 	
 			
@@ -136,7 +146,8 @@
 				
 					<h3>Suco Del Valle lata</h3>
 					<img class="snack_list_img "src="assets/food/suco.png">	
-					<p class="snack_list_desc">R$9,99</p><br><button>Adicionar ao carrinho</button>
+					<p class="snack_list_desc">R$9,99</p><br>
+					<button onclick="addToCarrinho('Suco Del Valle lata', 100)">Adicionar ao carrinho</button>
 				
 		
 				
@@ -145,7 +156,8 @@
 				
 				<h3>Água Mineral sem gás</h3>
 				<img class="snack_list_img "src="assets/food/agua.png">	
-				<p class="snack_list_desc">R$5,99</p><br><button>Adicionar ao carrinho</button>
+				<p class="snack_list_desc">R$5,99</p><br>
+				<button onclick="addToCarrinho('Água Mineral sem gás', 110)">Adicionar ao carrinho</button>
 			
 	
 			
@@ -154,7 +166,8 @@
 				
 				<h3>Água Mineral com gás</h3><br>
 				<img class="snack_list_img "src="assets/food/gas.png"><br><br>
-				<p class="snack_list_desc">R$5,99</p><br><button>Adicionar ao carrinho</button>
+				<p class="snack_list_desc">R$5,99</p><br>
+				<button onclick="addToCarrinho('Água Mineral com gás', 5,99)">Adicionar ao carrinho</button>
 			
 	
 			
